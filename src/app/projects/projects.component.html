@@ -1,0 +1,40 @@
+<!-- Projects -->
+<div id="projects" class="filter">
+  <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="section-title">PROJECTS</div>
+                  <h2>Projects That We're Proud Of</h2>
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+          <div class="row">
+              <div class="col-lg-12">
+                  <!-- Filter -->
+
+                  <div class="button-group filters-button-group">
+                      <a class="button" (click)="showAll()"><span>SHOW ALL</span></a>
+                      <a class="button" (click)="filterProjLessThenThree()"><span>DESIGN</span></a>
+                      <a class="button" (click)="filterProjBeetwenThreeAndFive()"><span>DEVELOPMENT</span></a>
+                      <a class="button" (click)="filterProjBeetwenOneAndThree()"><span>MARKETING</span></a>
+                      <a class="button" (click)="filterProjEquealOne()"><span>SEO</span></a>
+                  </div> <!-- end of button group -->
+                  <div *ngFor="let project of projects">
+                    <ul>
+                  <div class="grid" id="block">
+                      <div class="element-item development">
+                          <a class="popup-with-move-anim">
+                            <div class="element-item-overlay"><span>{{project.name}}</span>
+                          </div><img src={{project.img}}></a>
+                      </div>
+                    </div>
+                  </ul>
+                    </div>
+
+                  </div> <!-- end of grid -->
+                  <!-- end of filter -->
+
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+  </div> <!-- end of container -->
+
+  <!-- end of projects -->

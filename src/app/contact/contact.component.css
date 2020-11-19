@@ -1,0 +1,17 @@
+label {
+  width: 30rem;
+}
+.p-2 {
+  text-align: center;
+  padding-right: 100px;
+}
+#contact,
+p,
+a,
+h2 {
+  background-color: black;
+  color: white;
+}
+button {
+  margin-left: 200px;
+}

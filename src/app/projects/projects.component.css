@@ -1,0 +1,14 @@
+h2 {
+  color: white;
+}
+
+.container {
+  width: 100%;
+}
+
+#block {
+  margin-left: -40px;
+}
+.col-lg-12 {
+  animation: pulse 1s infinite;
+}

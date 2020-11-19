@@ -1,0 +1,11 @@
+
+[
+  {"id":1, "name":"Online Banking", "img": "assets/images/project-1.jpg"},
+   {"id":2, "name":"Classic Industry", "img": "assets/images/project-2.jpg"},
+   {"id":3, "name":"BoomBap Audio", "img": "assets/images/project-3.jpg"},
+   {"id":4, "name":"Van Moose", "img": "assets/images/project-4.jpg"},
+   {"id":5, "name":"Joy Moments", "img": "assets/images/project-5.jpg"},
+   {"id":6, "name":"Spark Events", "img": "assets/images/project-6.jpg"},
+   {"id":7, "name":"Casual Wear", "img": "assets/images/project-7.jpg"},
+   {"id":8, "name":"Zazoo Apps", "img": "assets/images/project-8.jpg"}
+]

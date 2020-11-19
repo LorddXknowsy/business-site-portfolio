@@ -1,0 +1,16 @@
+::placeholder {
+  color: white;
+}
+
+.form-group {
+  margin-top: 2em;
+}
+
+.text-container {
+  transition: width 1s, height 1s, transform 0.5s;
+}
+.text-container:hover {
+  margin-top: 5em;
+  -ms-transform: rotate(10deg);
+  transform: skewY(-5deg);
+}

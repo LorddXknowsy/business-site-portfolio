@@ -1,0 +1,96 @@
+ <!-- Contact -->
+ <div id="contact" class="form-2">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="text-container">
+                  <div class="section-title">CONTACT</div>
+                  <h2>Get In Touch Using The Form</h2>
+                  <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                  <ul class="list-unstyled li-space-lg">
+                      <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Cherkezishvili street, Tbilisi, Georgia</li>
+                      <li><i class="fas fa-phone"></i><a href="tel:003024630820">+995 599 72 66 92</a></li>
+                      <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">aleko.beria@yahoo.com</a></li>
+                  </ul>
+                  <h3>Follow Aria On Social Media</h3>
+
+                  <span class="fa-stack">
+                      <a href="https://www.facebook.com/aleko.beria/">
+                          <span class="hexagon"></span>
+                          <i class="fab fa-facebook-f fa-stack-1x"></i>
+                      </a>
+                  </span>
+                  <span class="fa-stack">
+                      <a href="https://twitter.com/AlexSui1">
+                          <span class="hexagon"></span>
+                          <i class="fab fa-twitter fa-stack-1x"></i>
+                      </a>
+                  </span>
+                  <span class="fa-stack">
+                      <a href="https://www.pinterest.com/Alexberia/_saved/">
+                          <span class="hexagon"></span>
+                          <i class="fab fa-pinterest fa-stack-1x"></i>
+                      </a>
+                  </span>
+                  <span class="fa-stack">
+                      <a href="https://www.instagram.com/alexberia_fo_real/">
+                          <span class="hexagon"></span>
+                          <i class="fab fa-instagram fa-stack-1x"></i>
+                      </a>
+                  </span>
+                  <span class="fa-stack">
+                      <a href="https://www.linkedin.com/in/alex-beria-3349b08a/">
+                          <span class="hexagon"></span>
+                          <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                      </a>
+                  </span>
+
+              </div> <!-- end of text-container -->
+          </div> <!-- end of col -->
+
+            <div class="col-lg-6">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                        <div class="p-2 bd-highlight">
+                        <label>
+                          Name
+                          <input class="form-control form-control-lg" id="name" type="text" formControlName="name" required minlength="3">
+                          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+                          class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required">
+                          Name is required.
+                        </div>
+                        <div *ngIf="name.errors.minlength">
+                          Name must be at least 3 characters long.
+                        </div>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div class="p-2 bd-highlight">
+                        <label>
+                          Email
+                          <input class="form-control form-control-lg" type="text" formControlName="email">
+                        </label>
+                      </div>
+
+                      <div class="p-2 bd-highlight">
+                        <label>
+                          message
+                          <textarea class="form-control form-control-lg" type="text" rows="6" formControlName="message"></textarea>
+                        </label>
+                      </div>
+
+                        <button class="btn-solid-lg page-scroll" type="submit" [disabled]="!contactForm.valid">Contact</button>
+
+                      </form>
+                  </div>
+                </div>
+
+        </div>
+
+
+
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
